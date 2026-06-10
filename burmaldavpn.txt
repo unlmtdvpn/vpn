@@ -1,3 +1,7 @@
+#profile-title: 🛜 Fast VPN
+#announce: ⚡ Лучший безлимитный VPN. Меньше ms — лучше.
+#profile-update-interval: 1
+
 # Швеция
 vless://6c0ea709-5cbe-487e-990b-f660955d039d@se-new.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=sun9-37.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#%F0%9F%87%B8%F0%9F%87%AA+Wi-Fi+%7C+%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F
 
