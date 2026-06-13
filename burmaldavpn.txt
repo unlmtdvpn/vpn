@@ -190,8 +190,7 @@
       { "tag": "direct", "protocol": "freedom" },
       { "tag": "block", "protocol": "blackhole" }
     ],
-    "remarks": "🛜 Fast VPN - Лучший безлимитный VPN сервис! (⚡ Автовыбор)",
-    "announce": "⚡ Лучший безлимитный VPN. Меньше ms — лучше.",
+    "remarks": "Wi-Fi/LTE Автовыбор",
     "routing": {
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
