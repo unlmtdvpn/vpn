@@ -190,9 +190,9 @@
       { "tag": "direct", "protocol": "freedom" },
       { "tag": "block", "protocol": "blackhole" }
     ],
-    "remarks": "Wi-Fi/LTE | Авто выбор",
-    "announce": "⚡ Лучший безлимитный VPN сервис! Авто-подбор наименьшего пинга (ms).",
-    "routing": {{ \"type\": \"field\", \"inboundTag\": [\"socks\", \"http\"], \"network\": \"tcp,udp\", \"balancerTag\": \"bal_auto\" }
+    "remarks": "🛜 Fast VPN - Лучший безлимитный VPN сервис! (⚡ Автовыбор)",
+    "announce": "⚡ Лучший безлимитный VPN. Меньше ms — лучше.",
+    "routing": {
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "balancers": [
@@ -223,55 +223,48 @@
     "routing": { "rules": [{ "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" }], "domainMatcher": "hybrid", "domainStrategy": "IPIfNonMatch" },
     "inbounds": [{ "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": { "udp": true, "auth": "noauth" }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "settings": { "allowTransparent": false }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }],
     "outbounds": [{ "tag": "proxy", "protocol": "vless", "settings": { "vnext": [{ "address": "se-new.datanode-internal.net", "port": 443, "users": [{ "id": "6c0ea709-5cbe-487e-990b-f660955d039d", "encryption": "none", "flow": "xtls-rprx-vision" }] }] }, "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "sun9-37.userapi.com", "show": false, "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic", "shortId": "abbcd128", "fingerprint": "qq" } } }, { "tag": "direct", "protocol": "freedom" }, { "tag": "block", "protocol": "blackhole" }],
-    "remarks": "🇸🇪 Wi-Fi | Швеция",
-    "announce": "🛜 Fast VPN - Лучший безлимитный VPN сервис!"
+    "remarks": "🇸🇪 Wi-Fi | Швеция"
   },
   {
     "dns": { "servers": ["1.1.1.1", "1.0.0.1"], "queryStrategy": "UseIP" },
     "routing": { "rules": [{ "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" }], "domainMatcher": "hybrid", "domainStrategy": "IPIfNonMatch" },
     "inbounds": [{ "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": { "udp": true, "auth": "noauth" }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "settings": { "allowTransparent": false }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }],
     "outbounds": [{ "tag": "proxy", "protocol": "vless", "settings": { "vnext": [{ "address": "pl.datanode-internal.net", "port": 443, "users": [{ "id": "6c0ea709-5cbe-487e-990b-f660955d039d", "encryption": "none", "flow": "xtls-rprx-vision" }] }] }, "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "sun9-35.userapi.com", "show": false, "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic", "shortId": "abbcd128", "fingerprint": "qq" } } }, { "tag": "direct", "protocol": "freedom" }, { "tag": "block", "protocol": "blackhole" }],
-    "remarks": "🇵🇱 Wi-Fi | Польша",
-    "announce": "🛜 Fast VPN - Лучший безлимитный VPN сервис!"
+    "remarks": "🇵🇱 Wi-Fi | Польша"
   },
   {
     "dns": { "servers": ["1.1.1.1", "1.0.0.1"], "queryStrategy": "UseIP" },
     "routing": { "rules": [{ "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" }], "domainMatcher": "hybrid", "domainStrategy": "IPIfNonMatch" },
     "inbounds": [{ "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": { "udp": true, "auth": "noauth" }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "settings": { "allowTransparent": false }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }],
     "outbounds": [{ "tag": "proxy", "protocol": "vless", "settings": { "vnext": [{ "address": "de-new.datanode-internal.net", "port": 443, "users": [{ "id": "6c0ea709-5cbe-487e-990b-f660955d039d", "encryption": "none", "flow": "xtls-rprx-vision" }] }] }, "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "sun9-37.userapi.com", "show": false, "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic", "shortId": "abbcd128", "fingerprint": "qq" } } }, { "tag": "direct", "protocol": "freedom" }, { "tag": "block", "protocol": "blackhole" }],
-    "remarks": "🇩🇪 Wi-Fi | Германия",
-    "announce": "🛜 Fast VPN - Лучший безлимитный VPN сервис!"
+    "remarks": "🇩🇪 Wi-Fi | Германия"
   },
   {
     "dns": { "servers": ["1.1.1.1", "1.0.0.1"], "queryStrategy": "UseIP" },
     "routing": { "rules": [{ "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" }], "domainMatcher": "hybrid", "domainStrategy": "IPIfNonMatch" },
     "inbounds": [{ "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": { "udp": true, "auth": "noauth" }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "settings": { "allowTransparent": false }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }],
     "outbounds": [{ "tag": "proxy", "protocol": "vless", "settings": { "vnext": [{ "address": "fi.datanode-internal.net", "port": 443, "users": [{ "id": "6c0ea709-5cbe-487e-990b-f660955d039d", "encryption": "none", "flow": "xtls-rprx-vision" }] }] }, "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "sun9-36.userapi.com", "show": false, "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic", "shortId": "abbcd128", "fingerprint": "qq" } } }, { "tag": "direct", "protocol": "freedom" }, { "tag": "block", "protocol": "blackhole" }],
-    "remarks": "🇫🇮 Wi-Fi | Финляндия",
-    "announce": "🛜 Fast VPN - Лучший безлимитный VPN сервис!"
+    "remarks": "🇫🇮 Wi-Fi | Финляндия"
   },
   {
     "dns": { "servers": ["1.1.1.1", "1.0.0.1"], "queryStrategy": "UseIP" },
     "routing": { "rules": [{ "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" }], "domainMatcher": "hybrid", "domainStrategy": "IPIfNonMatch" },
     "inbounds": [{ "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": { "udp": true, "auth": "noauth" }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "settings": { "allowTransparent": false }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }],
     "outbounds": [{ "tag": "proxy", "protocol": "vless", "settings": { "vnext": [{ "address": "tr.datanode-internal.net", "port": 443, "users": [{ "id": "6c0ea709-5cbe-487e-990b-f660955d039d", "encryption": "none", "flow": "xtls-rprx-vision" }] }] }, "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "sun9-38.userapi.com", "show": false, "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic", "shortId": "abbcd128" } } }, { "tag": "direct", "protocol": "freedom" }, { "tag": "block", "protocol": "blackhole" }],
-    "remarks": "🇹🇷 Wi-Fi AI | Турция",
-    "announce": "🛜 Fast VPN - Лучший безлимитный VPN сервис!"
+    "remarks": "🇹🇷 Wi-Fi AI | Турция"
   },
   {
     "dns": { "servers": ["1.1.1.1", "1.0.0.1"], "queryStrategy": "UseIP" },
     "routing": { "rules": [{ "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" }], "domainMatcher": "hybrid", "domainStrategy": "IPIfNonMatch" },
     "inbounds": [{ "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": { "udp": true, "auth": "noauth" }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "settings": { "allowTransparent": false }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }],
     "outbounds": [{ "tag": "proxy", "protocol": "vless", "settings": { "vnext": [{ "address": "ru.datanode-internal.net", "port": 443, "users": [{ "id": "6c0ea709-5cbe-487e-990b-f660955d039d", "encryption": "none", "flow": "xtls-rprx-vision" }] }] }, "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "sun9-38.userapi.com", "show": false, "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic", "shortId": "abbcd128", "fingerprint": "qq" } } }, { "tag": "direct", "protocol": "freedom" }, { "tag": "block", "protocol": "blackhole" }],
-    "remarks": "🇷🇺 Wi-Fi YT | Россия",
-    "announce": "🛜 Fast VPN - Лучший безлимитный VPN сервис!"
+    "remarks": "🇷🇺 Wi-Fi YT | Россия"
   },
   {
     "dns": { "servers": ["1.1.1.1", "1.0.0.1"], "queryStrategy": "UseIP" },
     "routing": { "rules": [{ "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" }], "domainMatcher": "hybrid", "domainStrategy": "IPIfNonMatch" },
     "inbounds": [{ "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": { "udp": true, "auth": "noauth" }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "settings": { "allowTransparent": false }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }],
     "outbounds": [{ "tag": "proxy", "protocol": "vless", "settings": { "vnext": [{ "address": "hole3.datanode-internal.net", "port": 9443, "users": [{ "id": "6c0ea709-5cbe-487e-990b-f660955d039d", "encryption": "none", "flow": "xtls-rprx-vision" }] }] }, "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "ads.x5.ru", "show": false, "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic", "shortId": "abbcd128", "fingerprint": "qq" } } }, { "tag": "direct", "protocol": "freedom" }, { "tag": "block", "protocol": "blackhole" }],
-    "remarks": "🇩🇪 LTE | Анти-глушилка",
-    "announce": "🛜 Fast VPN - Лучший безлимитный VPN сервис! Режим защиты мобильной сети (порт 9443)."
+    "remarks": "🇩🇪 LTE | Анти-глушилка"
   }
 ]
