@@ -1,13 +1,5 @@
 [
   {
-    "remarks": "🛜 Ultra VPN",
-    "announce": "⚡ VPN Сервис. Все сервера стабильно работают.",
-    "dns": { "servers": ["1.1.1.1", "1.0.0.1"], "queryStrategy": "UseIP" },
-    "routing": { "rules": [{ "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" }], "domainMatcher": "hybrid", "domainStrategy": "IPIfNonMatch" },
-    "inbounds": [{ "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": { "udp": true, "auth": "noauth" }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "settings": { "allowTransparent": false }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }],
-    "outbounds": [{ "tag": "proxy", "protocol": "vless", "settings": { "vnext": [{ "address": "se-new.datanode-internal.net", "port": 443, "users": [{ "id": "449132ac-be91-46a5-bb19-bdb9975558ac", "encryption": "none", "flow": "xtls-rprx-vision" }] }] }, "streamSettings": { "network": "tcp", "security": "reality", "realitySettings": { "serverName": "tradingview.com", "show": false, "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic", "shortId": "abbcd128", "fingerprint": "qq" } } }, { "tag": "direct", "protocol": "freedom" }, { "tag": "block", "protocol": "blackhole" }]
-  },
-  {
     "dns": { "servers": ["1.1.1.1", "1.0.0.1"], "queryStrategy": "UseIP" },
     "routing": { "rules": [{ "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" }], "domainMatcher": "hybrid", "domainStrategy": "IPIfNonMatch" },
     "inbounds": [{ "tag": "socks", "port": 10808, "listen": "127.0.0.1", "protocol": "socks", "settings": { "udp": true, "auth": "noauth" }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }, { "tag": "http", "port": 10809, "listen": "127.0.0.1", "protocol": "http", "settings": { "allowTransparent": false }, "sniffing": { "enabled": true, "routeOnly": false, "destOverride": ["http", "tls", "quic"] } }],
