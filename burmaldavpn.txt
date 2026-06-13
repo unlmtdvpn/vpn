@@ -190,9 +190,9 @@
       { "tag": "direct", "protocol": "freedom" },
       { "tag": "block", "protocol": "blackhole" }
     ],
-    "remarks": "🛜 Fast VPN (Автовыбор)",
+    "remarks": "Wi-Fi/LTE | Авто выбор",
     "announce": "⚡ Лучший безлимитный VPN сервис! Авто-подбор наименьшего пинга (ms).",
-    "routing": {
+    "routing": {{ \"type\": \"field\", \"inboundTag\": [\"socks\", \"http\"], \"network\": \"tcp,udp\", \"balancerTag\": \"bal_auto\" }
       "domainMatcher": "hybrid",
       "domainStrategy": "IPIfNonMatch",
       "balancers": [
