@@ -1,1 +1,4 @@
-b
+#profile-title: 🏳 Ultra VPN
+#announce: 🚀 Все сервера работают стабильно, высокая скорость и надёжность. ⚡
+#profile-update-interval: 1
+#subscription-userinfo: upload=42090679500; download=42090679501; total=1099511627776; expire=1798761600
