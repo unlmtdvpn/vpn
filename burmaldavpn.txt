@@ -9,8 +9,6 @@ vless://6c0ea709-5cbe-487e-990b-f660955d039d@se-new.datanode-internal.net:443?fl
 
 vless://6c0ea709-5cbe-487e-990b-f660955d039d@pl.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=sun9-35.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#%F0%9F%87%B5%F0%9F%87%B1+%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0
 
-vless://7b95170c-2c58-461d-b882-d7021bf356b2@velsanto.online:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=storage.yandex.net&pbk=zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg&sid=28047c78b3f5ee2c#🇮🇩 Индонезия
-
 hysteria2://71b0bd15-a03a-481e-a52d-74042c8db157@103.88.241.133:8443?sni=slopllex.app#🇫🇮 Финляндия
 
 vless://a34b5e88-cf0d-4c01-8199-2d1002d3c787@meow-minsk.nethcloud.top:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=www.wikihow.com&pbk=HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U#🇧🇾 Беларусь
