@@ -13,6 +13,4 @@ hysteria2://71b0bd15-a03a-481e-a52d-74042c8db157@103.88.241.133:8443?sni=sloplle
 
 vless://a34b5e88-cf0d-4c01-8199-2d1002d3c787@meow-minsk.nethcloud.top:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=www.wikihow.com&pbk=HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U#🇧🇾 Беларусь
 
-vless://1e973bda-3a02-4431-9df8-83595f6f65d8@89.110.88.240:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=yandex.com&pbk=_jK_69DjoCDxp4BFmI2Pwb6lQNKyC6rg0q-ga-Td42E# YouTube
-
 vless://6c0ea709-5cbe-487e-990b-f660955d039d@hole3.datanode-internal.net:9443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇷🇺 Белый список
