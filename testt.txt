@@ -7,4 +7,6 @@ vless://6c0ea709-5cbe-487e-990b-f660955d039d@de-new.datanode-internal.net:443?fl
 
 vless://6c0ea709-5cbe-487e-990b-f660955d039d@se-new.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=tradingview.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇸🇪 Швеция
 
+vless://6c0ea709-5cbe-487e-990b-f660955d039d@pl.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=sun9-35.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇵🇱 Польша
+
 vless://62c06e14-8da5-0007-921e-7d5b0c3ad65b@178.248.238.85:3443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=rutube.ru&fp=qq&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6#%F0%9F%87%AA%F0%9F%87%AA%20%D0%91%D0%B5%D0%BB%D1%8B%D0%B9%20%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%F0%9F%93%B6
