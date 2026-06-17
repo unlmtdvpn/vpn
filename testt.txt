@@ -4,3 +4,4 @@
 #subscription-userinfo: upload=42090679500; download=42090679501; total=1099511627776; expire=1798761600
 
 vless://f47ac10b-58cc-4372-a567-0e02b2c3d479@downserver.com:443?encryption=none&security=tls&sni=example.com&fp=chrome&type=tcp&flow=xtls-rprx-vision#🔴 Ведутся технические работы 🛜
+vless://62c06e14-8da5-0007-921e-7d5b0c3ad65b@178.248.238.85:3443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=rutube.ru&fp=qq&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6#Резервный%20сервер%20(%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9%20%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%2Fwi-fi)
