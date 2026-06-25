@@ -1,18 +1,282 @@
-#profile-title: 🏳 Ultra VPN
-#announce: Высокоскоростной VPN Сервис. ⚡- Быстрый сервер. 
-#profile-update-interval: 1
-#subscription-userinfo: upload=42090679500; download=42090679501; total=1099511627776; expire=1798761600
-
-vless://9d5e7e04-53e4-4d98-bb26-236c907078a5@de-new.datanode-internal.net:443?security=reality&type=tcp&headerType=&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#%F0%9F%87%A9%F0%9F%87%AA%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F⚡
-
-vless://9d5e7e04-53e4-4d98-bb26-236c907078a5@se-new.datanode-internal.net:443?security=reality&type=tcp&headerType=&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#%F0%9F%87%B8%F0%9F%87%AA%20%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F⚡
-
-vless://9d5e7e04-53e4-4d98-bb26-236c907078a5@pl.datanode-internal.net:443?security=reality&type=tcp&headerType=&path=&host=&flow=xtls-rprx-vision&sni=sun9-35.userapi.com&fp=qq&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#%F0%9F%87%B5%F0%9F%87%B1%20%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0
-
-vless://9d5e7e04-53e4-4d98-bb26-236c907078a5@ru.datanode-internal.net:443?security=reality&type=tcp&headerType=&path=&host=&flow=xtls-rprx-vision&sni=sun9-38.userapi.com&fp=qq&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#%F0%9F%87%B7%F0%9F%87%BA%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F
-
-vless://9d5e7e04-53e4-4d98-bb26-236c907078a5@hole3.datanode-internal.net:9443?security=reality&type=tcp&headerType=&path=&host=&flow=xtls-rprx-vision&sni=ads.x5.ru&fp=qq&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇩🇪 LTE #1 ⚡
- 
-vless://b92337e0-6819-4f17-a3cc-f860b138b27a@178.250.242.194:6443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=a.wb.ru&pbk=noR7PAxYWRRrbQywDahrBlTkbNuNFkMLCPcX-wfa5TY&sid=086007#🇵🇱 LTE #2 
-
-vless://7573908b-d981-4153-92aa-33ee2d22144c@178.250.242.194:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=api.ok.ru&pbk=grRXV9R0CYdwQX8R4S1qfMde1b8g6Ejr1UZCxM5-PkM&sid=3efa66e0#🇳🇱 LTE #3 
+[
+  {
+    "dns": { "queryStrategy": "UseIP", "servers": [ { "address": "8.8.8.8", "skipFallback": false } ], "tag": "dns_out" },
+    "inbounds": [
+      { "port": 10808, "protocol": "mixed", "settings": { "auth": "noauth", "udp": true, "userLevel": 8 }, "sniffing": { "destOverride": ["http", "tls", "quic", "fakedns"], "enabled": true }, "tag": "mixed" },
+      { "port": 10809, "protocol": "http", "settings": { "userLevel": 8 }, "tag": "http" }
+    ],
+    "log": { "loglevel": "warning" },
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "mldsa65Verify": "",
+            "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic",
+            "serverName": "ads.x5.ru",
+            "shortId": "abbcd128",
+            "show": false
+          }
+        },
+        "settings": {
+          "address": "de-new.datanode-internal.net",
+          "encryption": "none",
+          "flow": "xtls-rprx-vision",
+          "id": "9d5e7e04-53e4-4d98-bb26-236c907078a5",
+          "level": 8,
+          "port": 443
+        }
+      },
+      { "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "noises": [], "redirect": "" }, "tag": "direct" },
+      { "protocol": "blackhole", "settings": { "response": { "type": "http" } }, "tag": "block" }
+    ],
+    "policy": { "levels": { "8": { "connIdle": 300, "downlinkOnly": 1, "handshake": 4, "uplinkOnly": 1 } }, "system": { "statsOutboundDownlink": true, "statsOutboundUplink": true } },
+    "remarks": "🇩🇪 Германия⚡",
+    "routing": { "domainStrategy": "AsIs", "rules": [ { "network": "tcp,udp", "outboundTag": "proxy", "type": "field" } ] },
+    "stats": {}
+  },
+  {
+    "dns": { "queryStrategy": "UseIP", "servers": [ { "address": "8.8.8.8", "skipFallback": false } ], "tag": "dns_out" },
+    "inbounds": [
+      { "port": 10808, "protocol": "mixed", "settings": { "auth": "noauth", "udp": true, "userLevel": 8 }, "sniffing": { "destOverride": ["http", "tls", "quic", "fakedns"], "enabled": true }, "tag": "mixed" },
+      { "port": 10809, "protocol": "http", "settings": { "userLevel": 8 }, "tag": "http" }
+    ],
+    "log": { "loglevel": "warning" },
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "mldsa65Verify": "",
+            "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic",
+            "serverName": "ads.x5.ru",
+            "shortId": "abbcd128",
+            "show": false
+          }
+        },
+        "settings": {
+          "address": "se-new.datanode-internal.net",
+          "encryption": "none",
+          "flow": "xtls-rprx-vision",
+          "id": "9d5e7e04-53e4-4d98-bb26-236c907078a5",
+          "level": 8,
+          "port": 443
+        }
+      },
+      { "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "noises": [], "redirect": "" }, "tag": "direct" },
+      { "protocol": "blackhole", "settings": { "response": { "type": "http" } }, "tag": "block" }
+    ],
+    "policy": { "levels": { "8": { "connIdle": 300, "downlinkOnly": 1, "handshake": 4, "uplinkOnly": 1 } }, "system": { "statsOutboundDownlink": true, "statsOutboundUplink": true } },
+    "remarks": "🇸🇪 Швеция⚡",
+    "routing": { "domainStrategy": "AsIs", "rules": [ { "network": "tcp,udp", "outboundTag": "proxy", "type": "field" } ] },
+    "stats": {}
+  },
+  {
+    "dns": { "queryStrategy": "UseIP", "servers": [ { "address": "8.8.8.8", "skipFallback": false } ], "tag": "dns_out" },
+    "inbounds": [
+      { "port": 10808, "protocol": "mixed", "settings": { "auth": "noauth", "udp": true, "userLevel": 8 }, "sniffing": { "destOverride": ["http", "tls", "quic", "fakedns"], "enabled": true }, "tag": "mixed" },
+      { "port": 10809, "protocol": "http", "settings": { "userLevel": 8 }, "tag": "http" }
+    ],
+    "log": { "loglevel": "warning" },
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "mldsa65Verify": "",
+            "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic",
+            "serverName": "sun9-35.userapi.com",
+            "shortId": "abbcd128",
+            "show": false
+          }
+        },
+        "settings": {
+          "address": "pl.datanode-internal.net",
+          "encryption": "none",
+          "flow": "xtls-rprx-vision",
+          "id": "9d5e7e04-53e4-4d98-bb26-236c907078a5",
+          "level": 8,
+          "port": 443
+        }
+      },
+      { "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "noises": [], "redirect": "" }, "tag": "direct" },
+      { "protocol": "blackhole", "settings": { "response": { "type": "http" } }, "tag": "block" }
+    ],
+    "policy": { "levels": { "8": { "connIdle": 300, "downlinkOnly": 1, "handshake": 4, "uplinkOnly": 1 } }, "system": { "statsOutboundDownlink": true, "statsOutboundUplink": true } },
+    "remarks": "🇵🇱 Польша",
+    "routing": { "domainStrategy": "AsIs", "rules": [ { "network": "tcp,udp", "outboundTag": "proxy", "type": "field" } ] },
+    "stats": {}
+  },
+  {
+    "dns": { "queryStrategy": "UseIP", "servers": [ { "address": "8.8.8.8", "skipFallback": false } ], "tag": "dns_out" },
+    "inbounds": [
+      { "port": 10808, "protocol": "mixed", "settings": { "auth": "noauth", "udp": true, "userLevel": 8 }, "sniffing": { "destOverride": ["http", "tls", "quic", "fakedns"], "enabled": true }, "tag": "mixed" },
+      { "port": 10809, "protocol": "http", "settings": { "userLevel": 8 }, "tag": "http" }
+    ],
+    "log": { "loglevel": "warning" },
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "mldsa65Verify": "",
+            "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic",
+            "serverName": "sun9-38.userapi.com",
+            "shortId": "abbcd128",
+            "show": false
+          }
+        },
+        "settings": {
+          "address": "ru.datanode-internal.net",
+          "encryption": "none",
+          "flow": "xtls-rprx-vision",
+          "id": "9d5e7e04-53e4-4d98-bb26-236c907078a5",
+          "level": 8,
+          "port": 443
+        }
+      },
+      { "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "noises": [], "redirect": "" }, "tag": "direct" },
+      { "protocol": "blackhole", "settings": { "response": { "type": "http" } }, "tag": "block" }
+    ],
+    "policy": { "levels": { "8": { "connIdle": 300, "downlinkOnly": 1, "handshake": 4, "uplinkOnly": 1 } }, "system": { "statsOutboundDownlink": true, "statsOutboundUplink": true } },
+    "remarks": "🇷🇺 Россия",
+    "routing": { "domainStrategy": "AsIs", "rules": [ { "network": "tcp,udp", "outboundTag": "proxy", "type": "field" } ] },
+    "stats": {}
+  },
+  {
+    "dns": { "queryStrategy": "UseIP", "servers": [ { "address": "8.8.8.8", "skipFallback": false } ], "tag": "dns_out" },
+    "inbounds": [
+      { "port": 10808, "protocol": "mixed", "settings": { "auth": "noauth", "udp": true, "userLevel": 8 }, "sniffing": { "destOverride": ["http", "tls", "quic", "fakedns"], "enabled": true }, "tag": "mixed" },
+      { "port": 10809, "protocol": "http", "settings": { "userLevel": 8 }, "tag": "http" }
+    ],
+    "log": { "loglevel": "warning" },
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "qq",
+            "mldsa65Verify": "",
+            "publicKey": "r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic",
+            "serverName": "ads.x5.ru",
+            "shortId": "abbcd128",
+            "show": false
+          }
+        },
+        "settings": {
+          "address": "hole3.datanode-internal.net",
+          "encryption": "none",
+          "flow": "xtls-rprx-vision",
+          "id": "9d5e7e04-53e4-4d98-bb26-236c907078a5",
+          "level": 8,
+          "port": 9443
+        }
+      },
+      { "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "noises": [], "redirect": "" }, "tag": "direct" },
+      { "protocol": "blackhole", "settings": { "response": { "type": "http" } }, "tag": "block" }
+    ],
+    "policy": { "levels": { "8": { "connIdle": 300, "downlinkOnly": 1, "handshake": 4, "uplinkOnly": 1 } }, "system": { "statsOutboundDownlink": true, "statsOutboundUplink": true } },
+    "remarks": "🇩🇪 LTE #1 ⚡",
+    "routing": { "domainStrategy": "AsIs", "rules": [ { "network": "tcp,udp", "outboundTag": "proxy", "type": "field" } ] },
+    "stats": {}
+  },
+  {
+    "dns": { "queryStrategy": "UseIP", "servers": [ { "address": "8.8.8.8", "skipFallback": false } ], "tag": "dns_out" },
+    "inbounds": [
+      { "port": 10808, "protocol": "mixed", "settings": { "auth": "noauth", "udp": true, "userLevel": 8 }, "sniffing": { "destOverride": ["http", "tls", "quic", "fakedns"], "enabled": true }, "tag": "mixed" },
+      { "port": 10809, "protocol": "http", "settings": { "userLevel": 8 }, "tag": "http" }
+    ],
+    "log": { "loglevel": "warning" },
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "mldsa65Verify": "",
+            "publicKey": "noOR7PAxYWRRrbQywDahrBlTkbNuNFkMLCPcX-wfa5TY",
+            "serverName": "a.wb.ru",
+            "shortId": "086007",
+            "show": false
+          }
+        },
+        "settings": {
+          "address": "178.250.242.194",
+          "encryption": "none",
+          "flow": "xtls-rprx-vision",
+          "id": "b92337e0-6819-4f17-a3cc-f860b138b27a",
+          "level": 8,
+          "port": 6443
+        }
+      },
+      { "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "noises": [], "redirect": "" }, "tag": "direct" },
+      { "protocol": "blackhole", "settings": { "response": { "type": "http" } }, "tag": "block" }
+    ],
+    "policy": { "levels": { "8": { "connIdle": 300, "downlinkOnly": 1, "handshake": 4, "uplinkOnly": 1 } }, "system": { "statsOutboundDownlink": true, "statsOutboundUplink": true } },
+    "remarks": "🇵🇱 LTE #2 ",
+    "routing": { "domainStrategy": "AsIs", "rules": [ { "network": "tcp,udp", "outboundTag": "proxy", "type": "field" } ] },
+    "stats": {}
+  },
+  {
+    "dns": { "queryStrategy": "UseIP", "servers": [ { "address": "8.8.8.8", "skipFallback": false } ], "tag": "dns_out" },
+    "inbounds": [
+      { "port": 10808, "protocol": "mixed", "settings": { "auth": "noauth", "udp": true, "userLevel": 8 }, "sniffing": { "destOverride": ["http", "tls", "quic", "fakedns"], "enabled": true }, "tag": "mixed" },
+      { "port": 10809, "protocol": "http", "settings": { "userLevel": 8 }, "tag": "http" }
+    ],
+    "log": { "loglevel": "warning" },
+    "outbounds": [
+      {
+        "protocol": "vless",
+        "tag": "proxy",
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "fingerprint": "firefox",
+            "mldsa65Verify": "",
+            "publicKey": "grRXV9R0CYdwQX8R4S1qfMde1b8g6Ejr1UZCxM5-PkM",
+            "serverName": "api.ok.ru",
+            "shortId": "3efa66e0",
+            "show": false
+          }
+        },
+        "settings": {
+          "address": "178.250.242.194",
+          "encryption": "none",
+          "flow": "xtls-rprx-vision",
+          "id": "7573908b-d981-4153-92aa-33ee2d22144c",
+          "level": 8,
+          "port": 443
+        }
+      },
+      { "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "noises": [], "redirect": "" }, "tag": "direct" },
+      { "protocol": "blackhole", "settings": { "response": { "type": "http" } }, "tag": "block" }
+    ],
+    "policy": { "levels": { "8": { "connIdle": 300, "downlinkOnly": 1, "handshake": 4, "uplinkOnly": 1 } }, "system": { "statsOutboundDownlink": true, "statsOutboundUplink": true } },
+    "remarks": "🇳🇱 LTE #3 ",
+    "routing": { "domainStrategy": "AsIs", "rules": [ { "network": "tcp,udp", "outboundTag": "proxy", "type": "field" } ] },
+    "stats": {}
+  }
+]
