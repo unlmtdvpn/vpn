@@ -15,7 +15,10 @@ async function handleRequest(request) {
     const newHeaders = new Headers();
     
     newHeaders.set("Content-Type", "application/json; charset=utf-8");
-    newHeaders.set("profile-title", "base64:RmFzdCBVbmxpbWl0ZWQgVlBO");
+    
+    // Устанавливаем название "Ultra VPN" (закодировано в Base64)
+    newHeaders.set("profile-title", "base64:VWx0cmEgVlBO");
+    
     newHeaders.set("subscription-userinfo", "upload=0; download=383331401728; total=0; expire=1899589200");
     newHeaders.set("profile-update-interval", "1");
     newHeaders.set("Access-Control-Allow-Origin", "*");
