@@ -2,6 +2,6 @@
 #profile-title: wlvpn
 #profile-update-interval: 1
 vless://31dac09f-78ee-49ca-9566-d20aea578fdc@hole-nn.datanode-internal.net:443?type=grpc&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128&serviceName=ads.x5.ru&mode=gun#Wi-Fi/LTE | Авто выбор ⚡
-vless://31dac09f-78ee-49ca-9566-d20aea578fdc@ru.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=sun9-38.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#Wi-Fi+%7C+YouTube
-vless://31dac09f-78ee-49ca-9566-d20aea578fdc@tr.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&sni=sun9-38.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#Wi-Fi+%7C+Gemini
 vless://31dac09f-78ee-49ca-9566-d20aea578fdc@se-new.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#%F0%9F%87%B8%F0%9F%87%AA+Wi-Fi+%7C+%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F
+vless://31dac09f-78ee-49ca-9566-d20aea578fdc@ru.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=sun9-38.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#%F0%9F%87%B7%F0%9F%87%BA+Wi-Fi+%7C+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F
+vless://31dac09f-78ee-49ca-9566-d20aea578fdc@tr.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&sni=sun9-38.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#%F0%9F%87%BA%F0%9F%87%B8+Wi-Fi+%7C+%D0%A1%D0%A8%D0%90
