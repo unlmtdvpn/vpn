@@ -1,11 +1,11 @@
 #announce: 🏳 wlvpn - стабильный VPN сервис.
 #profile-title: wlvpn
 #profile-update-interval: 1 
-vless://31dac09f-78ee-49ca-9566-d20aea578fdc@de-new.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇩🇪 Германия
-vless://31dac09f-78ee-49ca-9566-d20aea578fdc@se-new.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇸🇪 Швеция
+vless://31dac09f-78ee-49ca-9566-d20aea578fdc@de-new.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇩🇪⚡ Германия
+vless://31dac09f-78ee-49ca-9566-d20aea578fdc@se-new.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇸🇪⚡ Швеция
 vless://31dac09f-78ee-49ca-9566-d20aea578fdc@pl.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=sun9-35.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇵🇱 Польша
 vless://31dac09f-78ee-49ca-9566-d20aea578fdc@ru.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=qq&sni=sun9-38.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇷🇺 Россия
 vless://31dac09f-78ee-49ca-9566-d20aea578fdc@tr.datanode-internal.net:443?flow=xtls-rprx-vision&type=tcp&security=reality&sni=sun9-38.userapi.com&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128#🇹🇷 Турция
-vless://f4bb10e5-06cc-0009-8c25-666a2f025146@178.248.236.255:14443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=rutube.ru&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6#🇫🇮 Мобильная связь #1
-vless://f4bb10e5-06cc-49f7-8c25-666a2f025146@37.18.14.89:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=firefox&sni=rutube.ru&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6#🇩🇪 Мобильная связь #2
+vless://f4bb10e5-06cc-0009-8c25-666a2f025146@178.248.236.255:14443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=rutube.ru&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6#🇫🇮⚡ Мобильная связь #1
+vless://f4bb10e5-06cc-49f7-8c25-666a2f025146@37.18.14.89:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=firefox&sni=rutube.ru&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6#🇩🇪 ⚡Мобильная связь #2
 vless://31dac09f-78ee-49ca-9566-d20aea578fdc@hole-nn.datanode-internal.net:443?type=grpc&security=reality&fp=qq&sni=ads.x5.ru&pbk=r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic&sid=abbcd128&serviceName=ads.x5.ru&mode=gun#🇫🇷 Мобильная связь #3
